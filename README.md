@@ -1,4 +1,4 @@
-# Rebel Performance Website
+# Rebel Performance Website Booking System
 
 A server-side fitness and training website built with Node.js, Express, EJS, and MongoDB. It allows visitors to view available training classes and lets members sign up, log in, and manage class bookings.
 
