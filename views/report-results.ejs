@@ -1,0 +1,35 @@
+<%- include('partials/head') %>
+
+<h1><%= title %></h1>
+<div class="content-box">
+    <p>Showing sessions between <%= startDate %> and <%= endDate %></p>
+
+    <% if (reportData && reportData.length > 0) { %>
+        <table>
+            <thead>
+                <tr>
+                    <th>Trainee Name</th>
+                    <th>Sessions Attended</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% reportData.forEach(function(session) { %> 
+                    <tr>
+                        <td><%= session.traineeName %></td>
+                        <td>
+                            <ul>
+                                <li><%= session.trainingDate.toDateString() %> - <%= session.className %></li>
+                            </ul>
+                        </td>
+                    </tr>
+                <% }); %>
+            </tbody>
+        </table>
+    <% } else { %>
+        <p><%= message || "No sessions found for the given dates." %></p>
+    <% } %>
+
+    <a href="/report">Back to Report Form</a>
+</div>
+
+<%- include('partials/foot') %>
