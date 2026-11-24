@@ -1,5 +1,6 @@
-# Rebel Performance Website Booking System
+# Rebel Performance Booking System
 
+This project was created for my Server-Side Web Development module during semester 1 of second year. 
 A server-side fitness and training website built with Node.js, Express, EJS, and MongoDB. It allows visitors to view available training classes and lets members sign up, log in, and manage class bookings.
 
 ## Features
